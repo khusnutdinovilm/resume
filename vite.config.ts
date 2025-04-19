@@ -15,4 +15,12 @@ export default defineConfig({
       "styles/": fileURLToPath(new URL("./src/styles/", import.meta.url)),
     },
   },
+
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: "modern",
+      },
+    },
+  },
 });
