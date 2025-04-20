@@ -1,5 +1,5 @@
 <template>
-  <main></main>
+  <intro-section />
 
   <div class="theme-switcher-block">
     <theme-switcher />
@@ -8,6 +8,8 @@
 
 <script setup lang="ts">
 import ThemeSwitcher from "ui/theme-switcher";
+
+import IntroSection from "./components/sections/intro-section.vue";
 </script>
 
 <style lang="scss">
