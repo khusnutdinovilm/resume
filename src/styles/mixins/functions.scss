@@ -1,4 +1,5 @@
 @use "sass:list";
+@use "sass:map";
 
 @use "config" as mx-config;
 
@@ -17,4 +18,14 @@
   }
 
   @return $src-list;
+}
+
+@function get-breakpoint-value($breakpoint-name) {
+  $breakpoint: map.get(mx-config.$breakpoints, $breakpoint-name);
+
+  @if $breakpoint {
+    @return $breakpoint;
+  } @else {
+    @error "Unknown breakpoint: #{$breakpoint-name}";
+  }
 }

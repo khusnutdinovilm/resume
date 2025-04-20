@@ -1,0 +1,22 @@
+@use "functions" as mx-func;
+
+/*
+  Генератор mobile first медиа-запросов
+*/
+@mixin start-at($breakpoint-name) {
+  @media (min-width: mx-func.get-breakpoint-value($breakpoint-name)) {
+    @content;
+  }
+}
+
+/*
+  Генератор desktop first медиа-запросов
+*/
+@mixin active-by($breakpoint-name) {
+  $max: mx-func.get-breakpoint-value($breakpoint-name);
+  $max-down: $max - 1;
+
+  @media (max-width: $max-down) {
+    @content;
+  }
+}

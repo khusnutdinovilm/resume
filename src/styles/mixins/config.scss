@@ -5,3 +5,11 @@ $formats: (
 );
 
 $assets-fonts-dir: "assets/fonts";
+
+$breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 760px,
+  lg: 1024px,
+  xl: 1200px,
+);
