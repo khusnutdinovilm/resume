@@ -31,7 +31,7 @@ const themeSwitcherIcon = computed(() => themesIcon[themePreference.value]);
   align-items: center;
   justify-content: center;
 
-  background-origin: var(--bg-quaternary);
+  background-color: var(--bg-quaternary);
   border: 1px solid var(--border-color);
   border-radius: 12px;
   padding: 10px;
