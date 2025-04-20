@@ -1,0 +1,16 @@
+@use "styles/variables/fonts" as font-var;
+@use "styles/mixins/fonts" as font-mx;
+
+$font-variants: (
+  "#{font-var.$primary-family}": (
+    "normal": 300 400 500 600 700,
+  ),
+);
+
+@each $font-name, $styles in $font-variants {
+  @each $style, $variants in $styles {
+    @each $variant in $variants {
+      @include font-mx.font-face($font-name, $variant, $style);
+    }
+  }
+}
