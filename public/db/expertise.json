@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "title": "Advanced CSS",
+    "description": "Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id."
+  },
+  {
+    "id": 1,
+    "title": "Front-end Design",
+    "description": "Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna. Ut aliquam sollicitudin leo."
+  },
+  {
+    "id": 2,
+    "title": "Ruby on Rails",
+    "description": "Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis. Vivamus vestibulum nulla cras ornare tristique elit nec ante."
+  },
+  {
+    "id": 3,
+    "title": "Object-oriented PHP",
+    "description": "Morbi in sem quis dui placerat ornare. Ut aliquam sollicitudin leo. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras ante. Vivamus vestibulum nulla nec ante."
+  },
+  {
+    "id": 4,
+    "title": "WordPress",
+    "description": "Phasellus ultrices nulla quis nibh. Fusce lobortis lorem. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, sodales sit amet, nisi."
+  },
+  {
+    "id": 5,
+    "title": "JavaScript / jQuery",
+    "description": "Cras ornare tristique elit lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id."
+  }
+]
