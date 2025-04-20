@@ -1,0 +1,35 @@
+@use "sass:map";
+@use "styles/variables/colors" as clrs;
+
+@mixin generate-theme-vars($theme: "dark") {
+  $bg-color-map: if($theme == "dark", clrs.$bg-dark, clrs.$bg-light);
+  @each $key, $value in $bg-color-map {
+    --bg-#{$key}: #{$value};
+  }
+
+  $text-color-map: if($theme == "dark", clrs.$text-dark, clrs.$text-light);
+  @each $key, $value in $text-color-map {
+    --text-#{$key}: #{$value};
+  }
+
+  --border-color: #{if($theme == "dark", clrs.$dark-border-color, clrs.$light-border-color)};
+}
+
+:root {
+  @include generate-theme-vars("light");
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-theme]),
+    &[data-theme="dark"] {
+      @include generate-theme-vars("dark");
+    }
+  }
+}
+
+[data-theme="light"] {
+  @include generate-theme-vars("light");
+}
+
+[data-theme="dark"] {
+  @include generate-theme-vars("dark");
+}
