@@ -11,7 +11,8 @@
       "composable/*": ["./src/composable/*"],
       "ui/*": ["./src/components/ui/*"],
       "shared/*": ["./src/components/shared/*"],
-      "store/*": ["./src/stores/*"]
+      "store/*": ["./src/stores/*"],
+      "section/*": ["./src/components/sections/*"]
     }
   }
 }

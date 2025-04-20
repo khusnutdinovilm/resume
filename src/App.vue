@@ -9,7 +9,7 @@
 <script setup lang="ts">
 import ThemeSwitcher from "ui/theme-switcher";
 
-import IntroSection from "./components/sections/intro-section.vue";
+import IntroSection from "section/intro-section";
 </script>
 
 <style lang="scss">

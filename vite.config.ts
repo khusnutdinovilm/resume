@@ -19,6 +19,7 @@ export default defineConfig({
       "ui/": fileURLToPath(new URL("./src/components/ui/", import.meta.url)),
       "shared/": fileURLToPath(new URL("./src/components/shared/", import.meta.url)),
       "store/": fileURLToPath(new URL("./src/stores/", import.meta.url)),
+      "section/": fileURLToPath(new URL("./src/components/sections/", import.meta.url)),
     },
   },
 

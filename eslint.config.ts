@@ -126,6 +126,11 @@ export default defineConfigWithVueTs(
               group: "internal",
               position: "after",
             },
+            {
+              pattern: "section/**",
+              group: "internal",
+              position: "after",
+            },
           ],
           "pathGroupsExcludedImportTypes": ["builtin"],
           "newlines-between": "always",
