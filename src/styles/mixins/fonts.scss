@@ -1,0 +1,13 @@
+@use "functions" as mx-func;
+
+@mixin font-face($family, $weight, $style: normal) {
+  $font-file-path: mx-func.getFontFileName($family, $weight, $style);
+
+  @font-face {
+    font-family: $family;
+    font-weight: $weight;
+    src: mx-func.getSrcList($font-file-path);
+    font-style: $style;
+    font-display: swap;
+  }
+}

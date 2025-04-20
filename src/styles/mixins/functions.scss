@@ -1,0 +1,20 @@
+@use "sass:list";
+
+@use "config" as mx-config;
+
+@function getFontFileName($family, $weight, $style: normal) {
+  $base-name: "#{$family}-#{$weight}";
+  $font-file: if($style == normal, $base-name, "#{$base-name}-Italic");
+
+  @return "#{mx-config.$assets-fonts-dir}/#{$family}/#{$font-file}";
+}
+
+@function getSrcList($file-path) {
+  $src-list: ();
+
+  @each $ext, $format in mx-config.$formats {
+    $src-list: list.append($src-list, url("#{$file-path}.#{$ext}") format($format), comma);
+  }
+
+  @return $src-list;
+}

@@ -26,6 +26,7 @@ export default defineConfig({
         api: "modern",
         additionalData: `
           @use "styles/variables/index.scss" as v;
+          @use "styles/mixins/index.scss" as mx;
         `,
       },
     },
