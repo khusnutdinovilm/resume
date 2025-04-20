@@ -1,0 +1,53 @@
+@mixin heading-xl($color: var(--text-primary)) {
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.2;
+  color: $color;
+}
+
+@mixin heading-lg($color: var(--text-primary)) {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.45;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@mixin heading-sm($color: var(--text-primary)) {
+  font-size: inherit;
+  font-weight: 600;
+  line-height: inherit;
+  color: $color;
+}
+
+@mixin heading-sub($color: var(--text-secondary)) {
+  font-size: 0.7em;
+  font-weight: 400;
+  line-height: inherit;
+  color: $color;
+}
+
+@mixin body-base($color: var(--text-primary)) {
+  font-size: inherit;
+  font-weight: normal;
+  line-height: 1.75;
+  color: $color;
+}
+
+@mixin body-sm($color: var(--text-secondary)) {
+  font-size: 0.7rem;
+  font-weight: 500;
+  line-height: inherit;
+  color: $color;
+
+  opacity: 0.6;
+}
+
+@mixin body-md($color: var(--text-primary)) {
+  font-size: 1.22rem;
+  font-weight: inherit;
+  line-height: inherit;
+  color: $color;
+
+  margin-bottom: 1.375rem;
+}
