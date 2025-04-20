@@ -13,6 +13,7 @@ import ThemeSwitcher from "ui/theme-switcher";
 <style lang="scss">
 .theme-switcher-block {
   position: fixed;
+  z-index: 10;
   bottom: 12px;
   right: 12px;
 }
