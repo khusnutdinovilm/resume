@@ -14,6 +14,7 @@ export default defineConfig({
     alias: {
       "styles/": fileURLToPath(new URL("./src/styles/", import.meta.url)),
       "composable/": fileURLToPath(new URL("./src/composable/", import.meta.url)),
+      "ui/": fileURLToPath(new URL("./src/components/ui/", import.meta.url)),
     },
   },
 
