@@ -1,0 +1,29 @@
+import { defineStore } from "pinia";
+import { ref } from "vue";
+
+interface SkillType {
+  id: number;
+  name: string;
+  value: number;
+}
+
+const useSkillsStore = defineStore("skills-store", () => {
+  const skillsList = ref<SkillType[]>([]);
+
+  const getSkillsList = async () => {
+    const res = await fetch("db/skills.json", { method: "get" });
+
+    if (!res.ok) {
+      throw Error(`HTTP error! status: ${res.status}`);
+    }
+
+    skillsList.value = await res.json();
+  };
+
+  return {
+    skillsList,
+    getSkillsList,
+  };
+});
+
+export default useSkillsStore;
