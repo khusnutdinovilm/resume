@@ -1,6 +1,7 @@
 <template>
   <intro-section />
   <expertise-section />
+  <skills-section />
 
   <div class="theme-switcher-block">
     <theme-switcher />
@@ -12,6 +13,7 @@ import ThemeSwitcher from "ui/theme-switcher";
 
 import ExpertiseSection from "section/expertise-section";
 import IntroSection from "section/intro-section";
+import SkillsSection from "section/skills-section";
 </script>
 
 <style lang="scss">
