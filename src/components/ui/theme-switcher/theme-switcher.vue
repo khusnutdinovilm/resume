@@ -6,7 +6,8 @@
 
 <script setup lang="ts">
 import { computed } from "vue";
-import useTheme from "../../../composable/use-theme";
+
+import useTheme from "composable/use-theme";
 
 defineOptions({
   name: "theme-switcher",
