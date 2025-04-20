@@ -1,25 +1,19 @@
 <template>
-  <div class="expertise-item">
-    <div class="expertise-item__figure">
-      <div class="expertise-item__number">
-        {{ expertiseNumber }}
-      </div>
-    </div>
-
-    <div class="expertise-item__body">
-      <div class="expertise-item__title">
-        {{ expertiseItem.title }}
-      </div>
-
-      <div class="expertise-item__description">
-        {{ expertiseItem.description }}
-      </div>
-    </div>
-  </div>
+  <media-block
+    :media-title="expertiseItem.title"
+    :media-body="expertiseItem.description"
+    class="expertise-item"
+  >
+    <template #media-number>
+      {{ expertiseNumber }}
+    </template>
+  </media-block>
 </template>
 
 <script setup lang="ts">
 import { computed } from "vue";
+
+import MediaBlock from "shared/media-block";
 
 defineOptions({
   name: "expertise-item",
@@ -38,22 +32,3 @@ interface ExpertiseType {
 
 const expertiseNumber = computed(() => (props.number < 10 ? `0${props.number}` : props.number));
 </script>
-
-<style lang="scss">
-.expertise-item {
-  display: flex;
-  align-items: flex-start;
-
-  &__figure {
-    flex: 0 0 2.8rem;
-  }
-
-  &__number {
-    @include mx.tp-heading-lg(var(--text-accent));
-  }
-
-  &__title {
-    @include mx.tp-heading-lg();
-  }
-}
-</style>
