@@ -112,6 +112,11 @@ export default defineConfigWithVueTs(
               position: "after",
             },
             {
+              pattern: "shared/**",
+              group: "internal",
+              position: "after",
+            },
+            {
               pattern: "composable/**",
               group: "internal",
               position: "after",

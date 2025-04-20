@@ -17,6 +17,7 @@ export default defineConfig({
       "styles/": fileURLToPath(new URL("./src/styles/", import.meta.url)),
       "composable/": fileURLToPath(new URL("./src/composable/", import.meta.url)),
       "ui/": fileURLToPath(new URL("./src/components/ui/", import.meta.url)),
+      "shared/": fileURLToPath(new URL("./src/components/shared/", import.meta.url)),
     },
   },
 
