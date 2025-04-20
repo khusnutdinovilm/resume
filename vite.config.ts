@@ -13,6 +13,7 @@ export default defineConfig({
 
   resolve: {
     alias: {
+      "assets/": fileURLToPath(new URL("./src/assets/", import.meta.url)),
       "styles/": fileURLToPath(new URL("./src/styles/", import.meta.url)),
       "composable/": fileURLToPath(new URL("./src/composable/", import.meta.url)),
       "ui/": fileURLToPath(new URL("./src/components/ui/", import.meta.url)),
