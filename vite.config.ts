@@ -13,6 +13,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "styles/": fileURLToPath(new URL("./src/styles/", import.meta.url)),
+      "composable/": fileURLToPath(new URL("./src/composable/", import.meta.url)),
     },
   },
 
