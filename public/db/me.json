@@ -1,0 +1,27 @@
+{
+  "name": "Desmond",
+  "surname": "Rambowski",
+  "avatarUrl": "/assets/img/avatar.jpg",
+  "specilization": "Web Developer & Front-end Expert",
+  "phone": "534.456.886",
+  "email": "hello@example.com",
+  "location": "Portland, OR",
+  "web": "ruventhemes.com",
+  "links": [
+    {
+      "id": 0,
+      "link": "https://www.facebook.com/RuvenThemes/",
+      "image": "assets/icons/facebook.svg"
+    },
+    {
+      "id": 1,
+      "link": "https://www.facebook.com/RuvenThemes/",
+      "image": "assets/icons/twitter.svg"
+    },
+    {
+      "id": 3,
+      "link": "https://www.facebook.com/RuvenThemes/",
+      "image": "assets/icons/github.svg"
+    }
+  ]
+}
