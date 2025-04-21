@@ -10,18 +10,18 @@
   "links": [
     {
       "id": 0,
-      "link": "https://www.facebook.com/RuvenThemes/",
-      "image": "assets/icons/facebook.svg"
+      "href": "https://www.facebook.com/RuvenThemes/",
+      "svgLink": "assets/icons/facebook.svg"
     },
     {
       "id": 1,
-      "link": "https://www.facebook.com/RuvenThemes/",
-      "image": "assets/icons/twitter.svg"
+      "href": "https://www.facebook.com/RuvenThemes/",
+      "svgLink": "assets/icons/twitter.svg"
     },
     {
       "id": 3,
-      "link": "https://www.facebook.com/RuvenThemes/",
-      "image": "assets/icons/github.svg"
+      "href": "https://www.facebook.com/RuvenThemes/",
+      "svgLink": "assets/icons/github.svg"
     }
   ]
 }

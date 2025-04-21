@@ -1,14 +1,9 @@
 import { defineStore } from "pinia";
+import type { IExpertiseItem } from "types";
 import { ref } from "vue";
 
-interface ExpertiseType {
-  id: number;
-  title: string;
-  description: string;
-}
-
 const useExpertiseStore = defineStore("expertise-store", () => {
-  const expertiseList = ref<ExpertiseType[]>([]);
+  const expertiseList = ref<IExpertiseItem[]>([]);
 
   const getExpertiseList = async () => {
     const res = await fetch("db/expertise.json", { method: "get" });

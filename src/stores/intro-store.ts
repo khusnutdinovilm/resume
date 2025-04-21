@@ -1,10 +1,8 @@
 import { defineStore } from "pinia";
 import { ref } from "vue";
 
-type AboutMeType = string[];
-
 const useIntroStore = defineStore("pinia", () => {
-  const aboutMe = ref<AboutMeType>([]);
+  const aboutMe = ref<string[]>([]);
 
   const getInfoAboutMe = async (): Promise<void> => {
     const res = await fetch("db/intro.json", { method: "get" });

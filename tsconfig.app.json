@@ -12,7 +12,8 @@
       "ui/*": ["./src/components/ui/*"],
       "shared/*": ["./src/components/shared/*"],
       "store/*": ["./src/stores/*"],
-      "section/*": ["./src/components/sections/*"]
+      "section/*": ["./src/components/sections/*"],
+      "types": ["./src/types.ts"]
     }
   }
 }
