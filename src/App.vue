@@ -1,4 +1,6 @@
 <template>
+  <header-section />
+
   <intro-section />
   <expertise-section />
   <skills-section />
@@ -12,6 +14,7 @@
 import ThemeSwitcher from "ui/theme-switcher";
 
 import ExpertiseSection from "section/expertise-section";
+import HeaderSection from "section/header-section";
 import IntroSection from "section/intro-section";
 import SkillsSection from "section/skills-section";
 </script>
