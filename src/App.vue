@@ -5,6 +5,8 @@
   <expertise-section />
   <skills-section />
 
+  <footer-section />
+
   <div class="theme-switcher-block">
     <theme-switcher />
   </div>
@@ -14,6 +16,7 @@
 import ThemeSwitcher from "ui/theme-switcher";
 
 import ExpertiseSection from "section/expertise-section";
+import FooterSection from "section/footer-section";
 import HeaderSection from "section/header-section";
 import IntroSection from "section/intro-section";
 import SkillsSection from "section/skills-section";
