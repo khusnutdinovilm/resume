@@ -76,7 +76,6 @@ export default defineConfigWithVueTs(
         },
       ],
       "vue/multi-word-component-names": "error",
-      "vue/no-v-html": "warn",
       "vue/v-slot-style": ["error", "shorthand"],
       "vue/component-name-in-template-casing": ["error", "kebab-case"],
       "vue/custom-event-name-casing": ["error", "kebab-case"],
