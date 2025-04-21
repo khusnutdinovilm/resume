@@ -38,17 +38,22 @@ body {
 .o-list {
   display: flex;
   flex-flow: row wrap;
-  margin-right: -3.5rem;
+  margin-right: 0;
   position: relative;
+
+  @include mx.rs-start-at(sm) {
+    margin-right: -3.5rem;
+  }
 
   &__item {
     width: 100%;
-    padding-right: 3.5rem;
+    padding-right: 0;
     margin-bottom: 0;
 
     @include mx.rs-start-at(sm) {
       flex: 0 0 auto;
       width: calc(99.999999% * 0.5);
+      padding-right: 3.5rem;
     }
   }
 }
