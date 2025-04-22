@@ -1,17 +1,21 @@
 <template>
   <div class="c-avatar">
-    <img :src="avatarUrl" alt="" class="c-avatar__img" />
+    <img :src="imgUrl" alt="" class="c-avatar__img" />
   </div>
 </template>
 
 <script setup lang="ts">
+import { computed } from "vue";
+
 defineOptions({
   name: "avatar-item",
 });
 
-defineProps<{
+const props = defineProps<{
   avatarUrl: string;
 }>();
+
+const imgUrl = computed(() => `${import.meta.env.BASE_URL}${props.avatarUrl}`);
 </script>
 
 <style lang="scss">
