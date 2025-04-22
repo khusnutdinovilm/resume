@@ -15,7 +15,11 @@ const props = defineProps<{
   avatarUrl: string;
 }>();
 
-const imgUrl = computed(() => `${import.meta.env.BASE_URL}${props.avatarUrl}`);
+const imgUrl = computed(() =>
+  import.meta.env.BASE_URL === "/"
+    ? props.avatarUrl
+    : `${import.meta.env.BASE_URL}${props.avatarUrl}`,
+);
 </script>
 
 <style lang="scss">
