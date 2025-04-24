@@ -1,0 +1,35 @@
+[
+  {
+    "id": 0,
+    "timeframe": {
+      "start": "2008",
+      "end": "2010"
+    },
+    "name": "Webster Tech University",
+    "specialization": "Master of Computer Science",
+    "location": "Miami, FL",
+    "description": "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh."
+  },
+  {
+    "id": 1,
+    "timeframe": {
+      "start": "2003",
+      "end": "2008"
+    },
+    "name": "Ninsei University",
+    "specialization": "Bachelor of Computer Science",
+    "location": "Tokyo, Japan",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero."
+  },
+  {
+    "id": 2,
+    "timeframe": {
+      "start": "2000",
+      "end": "2003"
+    },
+    "name": "Academy of Fine Arts",
+    "specialization": "Master of Arts",
+    "location": "Berlin, Germany",
+    "description": "Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales."
+  }
+]
