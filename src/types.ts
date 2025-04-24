@@ -36,3 +36,15 @@ export interface IPortfolioItem {
   repoUrl: string;
   siteUrl: string;
 }
+
+export interface ITimelineItem {
+  id: number;
+  timeframe: {
+    start: string;
+    end: string;
+  };
+  name: string;
+  specialization: string;
+  location: string;
+  description: string;
+}
