@@ -1,7 +1,7 @@
 <template>
   <div class="portfolio-item">
     <a :href="portfolioItem.siteUrl" class="portfolio-item__image-block" target="_blank">
-      <img :src="portfolioItem.imgUrl" :alt="portfolioItem.name" />
+      <img :src="portfolioImage" :alt="portfolioItem.name" />
     </a>
 
     <div class="portfolio-item__content">
@@ -30,6 +30,7 @@
 
 <script setup lang="ts">
 import type { IPortfolioItem } from "types";
+import { computed } from "vue";
 
 import GithubIcon from "icons/github-icon.vue";
 import WebIcon from "icons/web-icon.vue";
@@ -40,9 +41,15 @@ defineOptions({
   name: "portfolio-item",
 });
 
-defineProps<{
+const props = defineProps<{
   portfolioItem: IPortfolioItem;
 }>();
+
+const portfolioImage = computed(() =>
+  import.meta.env.BASE_URL === "/"
+    ? props.portfolioItem.imgUrl
+    : `${import.meta.env.BASE_URL}${props.portfolioItem.imgUrl}`,
+);
 </script>
 
 <style lang="scss">
