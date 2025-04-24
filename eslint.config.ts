@@ -106,6 +106,11 @@ export default defineConfigWithVueTs(
               position: "after",
             },
             {
+              pattern: "icons/**",
+              group: "internal",
+              position: "after",
+            },
+            {
               pattern: "ui/**",
               group: "internal",
               position: "after",

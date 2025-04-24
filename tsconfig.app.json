@@ -10,6 +10,7 @@
       "styles/*": ["./src/styles/*"],
       "composable/*": ["./src/composable/*"],
       "ui/*": ["./src/components/ui/*"],
+      "icons/*": ["./src/components/icons/*"],
       "shared/*": ["./src/components/shared/*"],
       "store/*": ["./src/stores/*"],
       "section/*": ["./src/components/sections/*"],
