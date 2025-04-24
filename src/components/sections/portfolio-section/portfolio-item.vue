@@ -54,6 +54,16 @@ const portfolioImage = computed(() =>
 
 <style lang="scss">
 .portfolio-item {
+  [data-theme="light"] & {
+    --text-color: #3a3a3a;
+    --deco-line-color: #535353;
+  }
+
+  [data-theme="dark"] & {
+    --text-color: #e4e5e5;
+    --deco-line-color: #c0c1c1;
+  }
+
   display: flex;
   flex-direction: column;
 
@@ -98,19 +108,19 @@ const portfolioImage = computed(() =>
   }
 
   &__name {
-    @include mx.tp-heading-lg(#e4e5e5);
+    @include mx.tp-heading-lg(var(--text-color));
   }
 
   &__deco-line {
     height: 3px;
     width: 25%;
-    color: #c0c1c1;
-    background: #c0c1c1;
+    color: var(--deco-line-color);
+    background: var(--deco-line-color);
   }
 
   &__description {
     flex: 1;
-    color: #e4e5e5;
+    color: var(--text-color);
   }
 
   &__urls {
