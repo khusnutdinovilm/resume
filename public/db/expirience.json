@@ -1,0 +1,35 @@
+[
+  {
+    "id": 0,
+    "timeframe": {
+      "start": "2015",
+      "end": "Present"
+    },
+    "name": "Unicorn Incubator Inc.",
+    "specialization": "Senior Interface Designer",
+    "location": "Portland, OR",
+    "description": "Consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti."
+  },
+  {
+    "id": 1,
+    "timeframe": {
+      "start": "2013",
+      "end": "2015"
+    },
+    "name": "California Design Bureau",
+    "specialization": "Creative Director",
+    "location": "Cupertino, CA",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis."
+  },
+  {
+    "id": 2,
+    "timeframe": {
+      "start": "2010",
+      "end": "2013"
+    },
+    "name": "Dreamland Creative",
+    "specialization": "Front-end Designer",
+    "location": "New York, NY",
+    "description": "Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus. Phasellus hendrerit. Pellentesque aaliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh."
+  }
+]
