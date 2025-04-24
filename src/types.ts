@@ -27,3 +27,12 @@ export interface IMeInfo {
   web: string;
   links: ILinkItem[];
 }
+
+export interface IPortfolioItem {
+  id: number;
+  name: string;
+  desc: string;
+  imgUrl: string;
+  repoUrl: string;
+  siteUrl: string;
+}
